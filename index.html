@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Footballers</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css"/>
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <form id="new-item-form">
+        <div id="form-wrapper">
+
+
+            <p>Please select your preferred league:</p>
+            <div>
+                <input type="radio" id="leagueChoice1" name="league" value="EPL">
+                <label for="leagueChoice1">EPL</label>
+                <input type="radio" id="leagueChoice2" name="league" value="SPL">
+                <label for="leagueChoice2">SPL</label>
+                <input type="radio" id="leagueChoice3" name="league" value="European">
+                <label for="leagueChoice3">European</label>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+
+            <div class="form-item">
+                <label for="name" class="primary">Name</label>
+                <input type="text" id="name" required/>
+            </div>
+
+            <div class="form-item">
+                <label for="club" class="primary">Club</label>
+                <input type="text" id="club" required/>
+            </div>
+
+            <div class="form-item">
+                <label for="position" class="primary">Position</label>
+                <select id="position">
+                    <option value="" disabled selected></option>
+                    <option value="Centre Back">Centre Back</option>
+                    <option value="Midfeild">Midfeild</option>
+                    <option value="Striker">Striker</option>
+                </select>
+            </div>
+        </div>
+        <input type="submit" value="save"/>
+    </form>
+    <pre id="log">
+    </pre>
+        <button id="delete-all">Delete All</button>
+        <h1>footballers</h1>
+    <ul id="player-List"> </ul>
+</body>
+
+
+
+</html>
